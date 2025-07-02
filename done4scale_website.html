@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Done4Scale - 8 Guaranteed Sales Meetings Per Month</title>
+    <meta name="description" content="Get 8 qualified sales meetings per month, guaranteed. Pay only when meetings happen. AI-powered B2B lead generation that delivers results.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #2563eb;
+        }
+
+        .cta-button {
+            background: #16a34a;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background: #15803d;
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .guarantee-badge {
+            background: #16a34a;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            display: inline-block;
+        }
+
+        /* Risk-Free Section */
+        .risk-free {
+            background: #f8fafc;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .risk-free h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #1e40af;
+        }
+
+        .risk-free-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .risk-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border: 2px solid #16a34a;
+        }
+
+        .risk-card h3 {
+            color: #16a34a;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        /* How It Works */
+        .how-it-works {
+            padding: 80px 0;
+        }
+
+        .how-it-works h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #1e40af;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .step {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .step-number {
+            background: #2563eb;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 1rem;
+        }
+
+        .step h3 {
+            margin-bottom: 1rem;
+            color: #1e40af;
+        }
+
+        /* Comparison Section */
+        .comparison {
+            background: #f8fafc;
+            padding: 80px 0;
+        }
+
+        .comparison h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #1e40af;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .comparison-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .generic-card {
+            border: 2px solid #ef4444;
+        }
+
+        .our-card {
+            border: 2px solid #16a34a;
+        }
+
+        .comparison-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .generic-card h3 {
+            color: #ef4444;
+        }
+
+        .our-card h3 {
+            color: #16a34a;
+        }
+
+        .email-example {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            font-family: monospace;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        /* Results Section */
+        .results {
+            padding: 80px 0;
+        }
+
+        .results h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #1e40af;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .result-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-left: 4px solid #16a34a;
+        }
+
+        .result-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #16a34a;
+            margin-bottom: 0.5rem;
+        }
+
+        /* FAQ Section */
+        .faq {
+            background: #f8fafc;
+            padding: 80px 0;
+        }
+
+        .faq h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #1e40af;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            background: #1e40af;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            padding: 1.5rem;
+            display: none;
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+
+        /* Final CTA */
+        .final-cta {
+            background: linear-gradient(135deg, #16a34a 0%, #22c55e 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .final-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .limited-badge {
+            background: #ef4444;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            display: inline-block;
+        }
+
+        /* Footer */
+        footer {
+            background: #1e293b;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">Done4Scale</div>
+            <ul class="nav-links">
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <a href="#contact" class="cta-button">Book Call</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="guarantee-badge">$0 if meetings don't happen</div>
+            <h1>8 Sales-Ready Meetings/Month<br>for B2B Leaders</h1>
+            <p class="subtitle">Our AI finds buyers with personalization your competitors can't match. We book meetings. You hit revenue targets.</p>
+            <a href="#contact" class="cta-button" style="font-size: 1.1rem; padding: 16px 32px;">Claim Guaranteed Meetings</a>
+        </div>
+    </section>
+
+    <!-- Risk-Free Section -->
+    <section class="risk-free">
+        <div class="container">
+            <h2>No Meetings = No Invoice</h2>
+            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;">We absorb 100% of the risk. You only pay when:</p>
+            
+            <div class="risk-free-grid">
+                <div class="risk-card">
+                    <h3>✓ Decision-maker attends</h3>
+                    <p>Real decision-makers, not junior staff</p>
+                </div>
+                <div class="risk-card">
+                    <h3>✓ 25+ Minutes</h3>
+                    <p>Full conversation, not a quick hang-up</p>
+                </div>
+                <div class="risk-card">
+                    <h3>✓ Confirms pain point</h3>
+                    <p>They acknowledge the problem you solve</p>
+                </div>
+                <div class="risk-card">
+                    <h3>✓ Has budget</h3>
+                    <p>Qualified to make purchasing decisions</p>
+                </div>
+            </div>
+            
+            <p style="margin-top: 2rem; font-style: italic;">(We'll even refund meetings where they ghost or aren't qualified.)</p>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2>How It Works<br><span style="font-size: 1.2rem; color: #666;">(4 Steps, No Fluff)</span></h2>
+            
+            <div class="steps-grid">
+                <div class="step fade-in">
+                    <div class="step-number">1</div>
+                    <h3>Share ICP</h3>
+                    <p>Tell us about your ideal customer profile and what pain points you solve</p>
+                </div>
+                <div class="step fade-in">
+                    <div class="step-number">2</div>
+                    <h3>AI Finds Pain</h3>
+                    <p>Our AI identifies prospects with specific pain signals and current challenges</p>
+                </div>
+                <div class="step fade-in">
+                    <div class="step-number">3</div>
+                    <h3>We Write Outreach</h3>
+                    <p>Personalized messaging based on real company data that gets responses</p>
+                </div>
+                <div class="step fade-in">
+                    <div class="step-number">4</div>
+                    <h3>You Take Meetings</h3>
+                    <p>Convert qualified leads to customers while we find more</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison">
+        <div class="container">
+            <h2>AI "Pain Finding" Advantage</h2>
+            
+            <div class="comparison-grid">
+                <div class="comparison-card generic-card">
+                    <h3>Generic Agency Email<br><span style="font-size: 0.9rem; font-weight: normal;">(What Your Competitors Send)</span></h3>
+                    
+                    <div class="email-example">
+Subject: Demo request for your team at {Company}
+
+Hi {First_Name},
+
+I hope this email finds you well. I'm reaching out because I noticed {Company} might benefit from our solution that helps companies like yours improve efficiency.
+
+Our platform has been trusted by over 500 companies to streamline their operations and increase productivity.
+
+Would you be interested in a quick 30-minute demo to see how we could help {Company} improve your processes?
+
+Let me know what works best for your calendar.
+
+Best regards,
+{Sales_Rep}
+                    </div>
+                    
+                    <ul style="text-align: left; color: #ef4444;">
+                        <li>Generic template with merge fields</li>
+                        <li>No specific pain points identified</li>
+                        <li>Could be sent to anyone</li>
+                        <li>Easily ignored as "another sales pitch"</li>
+                    </ul>
+                </div>
+                
+                <div class="comparison-card our-card">
+                    <h3>Done4Scale Email<br><span style="font-size: 0.9rem; font-weight: normal;">(What We'll Send For You)</span></h3>
+                    
+                    <div class="email-example">
+Subject: The Salesforce integration gap in your recent HubSpot migration
+
+Hi Sarah,
+
+Your engineering team's recent job postings show you've migrated 60% of your sales ops to HubSpot in the last 8 weeks – right when Salesforce deprecated their legacy API (affecting exactly your configuration).
+
+I noticed your VP of Sales mentioned challenges with lead routing in his SaaStr panel last month, particularly around attribution tracking.
+
+3 similar SaaS companies we work with solved this exact migration gap without losing pipeline visibility.
+
+Would it be valuable to discuss how they maintained lead attribution during this exact transition? I can share their specific approach to dual-system management.
+
+Available Thursday at 2pm if that works?
+
+David
+                    </div>
+                    
+                    <ul style="text-align: left; color: #16a34a;">
+                        <li>Specific pain point (Salesforce integration during HubSpot migration)</li>
+                        <li>Evidence of research (job postings + VP's panel)</li>
+                        <li>Relevant social proof (similar SaaS companies)</li>
+                        <li>Clear next step with specific time suggestion</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <p style="text-align: center; margin-top: 2rem; font-size: 1.1rem;">Our AI doesn't just swap merge fields. It analyzes real company data (tech stacks, job postings, executive statements) to identify specific, current pain points that make your outreach impossible to ignore.</p>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results" id="results">
+        <div class="container">
+            <h2>Real Results, Real Clients</h2>
+            
+            <div class="results-grid">
+                <div class="result-card fade-in">
+                    <div class="result-number">12</div>
+                    <h3>Marketing Agency</h3>
+                    <p>New clients worth $180K in pipeline within 45 days</p>
+                    <blockquote style="font-style: italic; margin-top: 1rem; color: #666;">
+                        "We went from 2-3 leads per month to 12 qualified meetings. Our close rate actually improved because the prospects were better qualified."
+                    </blockquote>
+                </div>
+                <div class="result-card fade-in">
+                    <div class="result-number">15</div>
+                    <h3>SaaS Company</h3>
+                    <p>Qualified demos booked in 3 weeks, 40% close rate</p>
+                    <blockquote style="font-style: italic; margin-top: 1rem; color: #666;">
+                        "The quality of meetings was incredible. Prospects came prepared and already understood their pain points."
+                    </blockquote>
+                </div>
+                <div class="result-card fade-in">
+                    <div class="result-number">$250K</div>
+                    <h3>Consulting Firm</h3>
+                    <p>New contracts from AI-generated leads in 60 days</p>
+                    <blockquote style="font-style: italic; margin-top: 1rem; color: #666;">
+                        "ROI was 8x our investment. We're scaling our team because of the predictable pipeline."
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    "Guaranteed meetings" sounds too good to be true. What's the catch?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>No catch - we're confident in our AI system. We only get paid when we deliver meetings that meet strict criteria: decision-maker attends, 25+ minutes, confirms pain point, has budget. If we don't deliver 8 qualified meetings, you don't pay. We've refined this process with 200+ B2B companies.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    How does this compare to hiring an SDR? Is this genuinely cost-effective?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>An SDR costs $60K+ annually plus benefits, training, and tools ($80K+ total). Our service costs less than half that and delivers better results because our AI never sleeps, doesn't need training, and processes thousands of prospects simultaneously. Plus, no risk - you only pay for results.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    How does the 'AI Pain Finding' actually work? Won't it sound generic?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Our AI analyzes job postings, tech stack changes, executive statements, funding announcements, and company growth signals to identify specific, current pain points. It's the opposite of generic - each message references real, timely challenges that prospects are actually facing right now.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    Are these meetings really "Sales-Ready"? Or just discovery calls?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>These are qualified prospects who've confirmed they have the specific pain point you solve, have budget authority, and are actively looking for solutions. They're not cold prospects - they're warm leads ready for your sales process.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    8 meetings/month sounds specific. What if we need more?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>8 is our baseline guarantee. Most clients get 10-15 meetings/month once we're dialed in. If you need more volume, we can scale up after proving the system works. We prefer to over-deliver on our guarantees.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="contact">
+        <div class="container">
+            <div class="limited-badge">Only taking 5 clients this quarter</div>
+            <h2>Ready for 8 Guaranteed Meetings?</h2>
+            <p>Book your free strategy call - no pitch, just results</p>
+            <a href="mailto:hello@done4scale.com?subject=8 Guaranteed Meetings - Strategy Call" class="cta-button" style="font-size: 1.2rem; padding: 18px 36px;">Book Strategy Call</a>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">hello@done4scale.com</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Done4Scale. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isActive = answer.classList.contains('active');
+                
+                // Close all other answers
+                document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('active'));
+                document.querySelectorAll('.faq-question span').forEach(s => s.textContent = '+');
+                
+                // Toggle current answer
+                if (!isActive) {
+                    answer.classList.add('active');
+                    question.querySelector('span').textContent = '−';
+                }
+            });
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
